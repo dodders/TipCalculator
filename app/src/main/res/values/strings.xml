@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TipCalculator</string>
+    <string name="totalamt">Total Amount:</string>
+    <string name="taxrate">Tax Rate:</string>
 </resources>
