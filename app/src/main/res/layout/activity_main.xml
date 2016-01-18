@@ -14,91 +14,108 @@
             android:layout_height="wrap_content" />
         <EditText android:id="@+id/totalAmt"
             android:layout_width="100dp"
+            android:textAlignment="viewEnd"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="40dp" android:orientation="horizontal">
-        <TextView android:text="@string/taxrate"
-            android:layout_width="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp">
+        <TextView android:text="Tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:background="#2196f3"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="40dp"
+        android:orientation="horizontal" android:layout_marginTop="20dp">
+        <TextView android:text="15%:"
+            android:layout_width="40dp"
+            android:textAlignment="textEnd"
             android:layout_height="wrap_content" />
-        <EditText android:id="@+id/taxRate"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:text="11.5"/>
-        <TextView
-            android:text="%"
-            android:layout_width="wrap_content"
+        <TextView android:id="@+id/tip15"
+            android:layout_width="60dp"
+            android:textAlignment="textEnd"
+            android:background="#e3f2fd"
+            android:layout_height="wrap_content" />
+        <TextView android:text="18%:"
+            android:layout_width="40dp"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content" />
+        <TextView android:id="@+id/tip18"
+            android:layout_width="60dp"
+            android:textAlignment="textEnd"
+            android:background="#e3f2fd"
+            android:layout_height="wrap_content" />
+        <TextView android:text="20%:"
+            android:layout_width="40dp"
+            android:textAlignment="textEnd"
+            android:layout_height="wrap_content" />
+        <TextView android:id="@+id/tip20"
+            android:layout_width="60dp"
+            android:background="#e3f2fd"
+            android:textAlignment="textEnd"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="40dp" android:orientation="horizontal">
-        <TextView android:text="Subtotal:"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content" />
-        <EditText android:id="@+id/subTotal"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"/>
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp">
+        <TextView android:text="Totals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:background="#2196f3"
+            android:textSize="20dp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent" android:layout_height="40dp" android:orientation="horizontal"
-            android:layout_marginTop="20dp">
-        <TextView android:text="Tip:"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" />
+        android:layout_marginTop="20dp">
         <TextView android:text="15%:"
-            android:layout_width="50dp"
+            android:layout_width="40dp"
+            android:textAlignment="textEnd"
             android:layout_height="wrap_content" />
-        <TextView android:id="@+id/tip15"
-            android:layout_width="50dp"
+        <TextView android:id="@+id/total15"
+            android:layout_width="60dp"
+            android:textAlignment="textEnd"
+            android:background="#e3f2fd"
             android:layout_height="wrap_content" />
         <TextView android:text="18%:"
-            android:layout_width="50dp"
+            android:layout_width="40dp"
+            android:textAlignment="textEnd"
             android:layout_height="wrap_content" />
-        <TextView android:id="@+id/tip18"
-            android:layout_width="50dp"
+        <TextView android:id="@+id/total18"
+            android:layout_width="60dp"
+            android:textAlignment="textEnd"
+            android:background="#e3f2fd"
             android:layout_height="wrap_content" />
         <TextView android:text="20%:"
-            android:layout_width="50dp"
+            android:layout_width="40dp"
+            android:textAlignment="textEnd"
             android:layout_height="wrap_content" />
-        <TextView android:id="@+id/tip20"
-            android:layout_width="50dp"
+        <TextView android:id="@+id/total20"
+            android:layout_width="60dp"
+            android:textAlignment="textEnd"
+            android:background="#e3f2fd"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent" android:layout_height="40dp" android:orientation="horizontal">
-        <TextView android:text="Total:"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" />
-        <TextView android:text="15%:"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" />
-        <TextView android:id="@+id/total15"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" />
-        <TextView android:text="18%:"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" />
-        <TextView android:id="@+id/total18"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" />
-        <TextView android:text="20%:"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" />
-        <TextView android:id="@+id/total20"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+    <Button android:id="@+id/btnCalc"
+        android:text="Calculate"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
 
     <Button android:id="@+id/btnReset"
         android:text="Reset"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_width="fill_parent"
         android:layout_height="40dp" />
 
