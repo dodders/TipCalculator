@@ -8,20 +8,19 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="40dp" android:orientation="horizontal">
+        android:layout_width="match_parent" android:layout_height="30dp" android:orientation="horizontal">
         <TextView android:text="@string/totalamt"
             android:layout_width="100dp"
             android:layout_height="wrap_content" />
-        <EditText android:id="@+id/totalAmt"
+        <TextView android:id="@+id/totalAmt"
             android:layout_width="100dp"
             android:textAlignment="viewEnd"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_marginTop="20dp">
         <TextView android:text="Tip"
             android:layout_width="match_parent"
@@ -32,7 +31,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="40dp"
+        android:layout_width="match_parent" android:layout_height="25dp"
         android:orientation="horizontal" android:layout_marginTop="20dp">
         <TextView android:text="15%:"
             android:layout_width="40dp"
@@ -65,7 +64,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:layout_marginTop="10dp">
         <TextView android:text="Totals"
             android:layout_width="match_parent"
@@ -76,7 +75,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent" android:layout_height="40dp" android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="25dp" android:orientation="horizontal"
         android:layout_marginTop="20dp">
         <TextView android:text="15%:"
             android:layout_width="40dp"
@@ -107,16 +106,88 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <Button android:id="@+id/btnCalc"
-        android:text="Calculate"
-        android:layout_marginTop="10dp"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="40dp">
+        <Button android:id="@+id/btnNum1"
+                android:text="1"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnNum2"
+                android:text="2"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnNum3"
+                android:text="3"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnDel"
+                android:text="DEL"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+    </LinearLayout>
 
-    <Button android:id="@+id/btnReset"
-        android:text="Reset"
-        android:layout_marginTop="20dp"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="40dp">
+        <Button android:id="@+id/btnNum4"
+                android:text="4"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnNum5"
+            android:text="5"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button android:id="@+id/btnNum6"
+                android:text="6"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnClr"
+                android:text="CLR"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="40dp">
+        <Button android:id="@+id/btnNum7"
+                android:text="7"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnNum8"
+                android:text="8"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnNum9"
+                android:text="9"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnPoint"
+                android:text="."
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="40dp">
+        <Button android:id="@+id/btnNumBlank1"
+                android:text=""
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnNum0"
+                android:text="0"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        <Button android:id="@+id/btnNumBlank2"
+                android:text=""
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+    </LinearLayout>
 
 </LinearLayout>
