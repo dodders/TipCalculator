@@ -5,7 +5,7 @@ public class Calculator {
     public Result calc(float total) throws Exception {
         Result ret = new Result();
 
-        if (total < 1) {
+        if (total < 0) {
             throw new Exception("Invalid total.");
         }
 

@@ -36,10 +36,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView textView = (TextView)findViewById(R.id.totalAmt);
         String total = textView.getText().toString();
 
+        if (total.compareTo("0") == 0) {
+            total = "";
+        }
         if (v.getId() == R.id.btnClr) {
             total = "0";
         } else if (v.getId() == R.id.btnDel) {
-            total = total.substring(0, total.length() - 2);
+            if (total.length() > 1) {
+                total = total.substring(0, total.length() - 1);
+            } else {
+                total = "0";
+            }
         } else if (v.getId() == R.id.btnPoint) {
             total = total.concat(".");
         } else if (v.getId() == R.id.btnNum0) {
@@ -66,7 +73,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //recalculate after each button press
         try {
-            Calculator.Result r = calc.calc(Float.parseFloat(total));
+            Float fTotal = Float.parseFloat(total);
+            Calculator.Result r = calc.calc(fTotal);
             textView.setText(total);
             setField(R.id.tip15, r.getTip15());
             setField(R.id.tip18, r.getTip18());
@@ -82,10 +90,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setField(int id, float amt) {
         TextView field = (TextView) findViewById(id);
         field.setText(String.format("%.2f", amt));
-    }
-
-    private void resetField(int id) {
-        TextView field = (TextView) findViewById(id);
-        field.setText("");
     }
 }
